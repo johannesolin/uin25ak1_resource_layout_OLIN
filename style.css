@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --lightblue: #58699d;
+  --navyblue: #2a324b;
+  --grey: #e1e5ee;
+  --white: hsl(0, 0%, 100%);
+  --black: #000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e1e5ee;
+  color: #2a324b;
+  margin: 0;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #2a324b;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  right: 2rem;
+  gap: 1rem;
+}
+
+nav button {
+  background-color: #2a324b;
+  border: none;
+  color: white;
+  height: 70px;
+  font-size: 1.1rem;
+  font-weight: 1000;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+nav button:hover,
+nav button.active {
+  color: #000;
+  background-color: #ffffff;
+}
+
+nav button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #2a324b;
+}
+
+#resource-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#resource-section h2 {
+  color: #2a324b;
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+#resource-section p {
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+#resource-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#resource-section li {
+  margin: 1rem 0;
+}
+
+#resource-section a {
+  color: #58699d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#resource-section a:hover {
+  text-decoration: underline;
+}
+
+#resource-section a::before {
+  color: #2a324b;
+}
